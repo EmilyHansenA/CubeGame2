@@ -5,9 +5,9 @@ public class DragAndDrop : MonoBehaviour
     private Vector3 pointScreen;
     private Vector3 offset;
 
-    [SerializeField] private float xRangeRight = 2.9f;
-    [SerializeField] private float xRangeLeft = -2.9f;
-    [SerializeField] private float yRangeUp = 15f;
+    private float xRangeRight = 2.9f;
+    private float xRangeLeft = -2.9f;
+    private float yRangeUp = 15f;
 
     private void OnMouseDown()
     {
