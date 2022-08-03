@@ -17,26 +17,26 @@ public class CreateCubes : MonoBehaviour
     private static string blueCubeTag = "blueCube";
     private void Awake()
     {
-        instCubes(blueCubes); //Создали кубы на сцене
+        instCubes(blueCubes);
         instCubes(redCubes);
 
-        redCubeArr = GameObject.FindGameObjectsWithTag(redCubeTag); //Получили массив созданных кубов разного цвета
+        redCubeArr = GameObject.FindGameObjectsWithTag(redCubeTag);
         blueCubeArr = GameObject.FindGameObjectsWithTag(blueCubeTag);
 
-        redCubeCount = redCubeArr.Length; //Определили длину массива из кубов разного цвета
+        redCubeCount = redCubeArr.Length;
         blueCubeCount = blueCubeArr.Length;
 
         cubeBalance = redCubeCount + blueCubeCount;
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
-        if (cubeBalance == 0) //Кубы закончились = закончилась игра
+        if (cubeBalance == 0)
         {
             SceneManager.LoadScene("GameOver");
         }
     }
-    private void instCubes(GameObject Cubes) //Создание рандомно кубов на сцене
+    private void instCubes(GameObject Cubes)
     {
         for (int i = 0; i < Random.Range(1, 5); i++)
         {
