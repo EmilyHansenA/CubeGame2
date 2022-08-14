@@ -9,24 +9,26 @@ public class CreateCubes : MonoBehaviour
     GameObject[] redCubeArr;
     GameObject[] blueCubeArr;
 
-    private int redCubeCount;
-    private int blueCubeCount;
-    internal static int cubeBalance;
+    private string _redCubeTag = "redCube";
+    private string _blueCubeTag = "blueCube";
 
-    private static string redCubeTag = "redCube";
-    private static string blueCubeTag = "blueCube";
+    private int _redCubeCount;
+    private int _blueCubeCount;
+
+    public static int cubeBalance;
+
     private void Awake()
     {
         instCubes(blueCubes);
         instCubes(redCubes);
 
-        redCubeArr = GameObject.FindGameObjectsWithTag(redCubeTag);
-        blueCubeArr = GameObject.FindGameObjectsWithTag(blueCubeTag);
+        redCubeArr = GameObject.FindGameObjectsWithTag(_redCubeTag);
+        blueCubeArr = GameObject.FindGameObjectsWithTag(_blueCubeTag);
 
-        redCubeCount = redCubeArr.Length;
-        blueCubeCount = blueCubeArr.Length;
+        _redCubeCount = redCubeArr.Length;
+        _blueCubeCount = blueCubeArr.Length;
 
-        cubeBalance = redCubeCount + blueCubeCount;
+        cubeBalance = _redCubeCount + _blueCubeCount;
     }
 
     private void Update()

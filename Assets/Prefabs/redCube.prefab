@@ -128,9 +128,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cf459e8778ff6c4cb32abcb367e28c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xRangeRight: 2.8
-  xRangeLeft: -2.8
-  yRangeUp: 15
 --- !u!114 &573590127136987449
 MonoBehaviour:
   m_ObjectHideFlags: 0

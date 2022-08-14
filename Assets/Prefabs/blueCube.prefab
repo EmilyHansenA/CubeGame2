@@ -128,9 +128,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cf459e8778ff6c4cb32abcb367e28c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xRangeRight: 2.8
-  xRangeLeft: -2.8
-  yRangeUp: 15
 --- !u!114 &-1256023108253512652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,5 +140,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de8f3a7207a9ee4893e21c9b9a5755e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redCube: {fileID: 5778431405496239357, guid: 8ecf86122e413074b98551cd7232f7e3, type: 3}
-  blueCube: {fileID: 5710006723155369335}
